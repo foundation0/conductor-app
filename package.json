@@ -2,13 +2,18 @@
   "name": "conductor-app",
   "productName": "Conductor",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foundation0/conductor-app.git"
+  },
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "gen-icons": "pnpm dlx @owfdr/generate-electron-icons --input src/assets/icon.png --output src/assets/icons --flatten"
   },
   "keywords": [],
   "author": {
