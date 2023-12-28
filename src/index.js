@@ -1,5 +1,8 @@
 const { app, BrowserWindow, Tray, Menu } = require('electron');
 const path = require('path');
+const { updateElectronApp } = require('update-electron-app');
+
+updateElectronApp()
 
 const isMac = process.platform === 'darwin'
 
