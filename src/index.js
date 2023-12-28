@@ -13,7 +13,7 @@ if (require('electron-squirrel-startup')) {
 
 const ICON = path.join(__dirname, 'assets/icons/256x256.png')
 
-// app.setName("Conductor")
+app.setName("Conductor")
 
 const createWindow = () => {
   // Create the browser window.
