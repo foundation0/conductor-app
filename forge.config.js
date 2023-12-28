@@ -1,4 +1,7 @@
 const path = require('path')
+const packageJson = require('./package.json');
+const { version } = packageJson;
+
 
 module.exports = {
   packagerConfig: {
@@ -13,14 +16,14 @@ module.exports = {
     {
       name: '@electron-forge/maker-squirrel',
       platforms: ['win32'],
-      config: (arch) => ({
-        name: 'Conductor',
-        authors: 'Foundation 0',
-        noMsi: true,
-        setupExe: `conductor-${version}-win32-${arch}-setup.exe`,
-        setupIcon: path.resolve(__dirname, 'src', 'assets', 'icons', 'icon.ico'),
-        // signWithParams: `/sha1 ${process.env.CERT_FINGERPRINT} /tr http://timestamp.digicert.com /td SHA256 /fd SHA256`,
-      }),
+      // config: (arch) => ({
+      //   name: 'Conductor',
+      //   authors: 'Foundation 0',
+      //   noMsi: true,
+      //   setupExe: `conductor-${version}-win32-${arch}-setup.exe`,
+      //   setupIcon: path.resolve(__dirname, 'src', 'assets', 'icons', 'icon.ico'),
+      //   // signWithParams: `/sha1 ${process.env.CERT_FINGERPRINT} /tr http://timestamp.digicert.com /td SHA256 /fd SHA256`,
+      // }),
     },
     {
       name: '@electron-forge/maker-zip',
