@@ -1,6 +1,7 @@
 {
   "name": "conductor-app",
   "productName": "Conductor",
+  "description": "A general purpose AI for creators, professionals, entrepreneurs and organizations",
   "version": "0.1.1",
   "repository": {
     "type": "git",
